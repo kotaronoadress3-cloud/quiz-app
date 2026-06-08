@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>機動戦士ガンダム クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>機動戦士ガンダム クイズ</h1>
+    </header>
+
+    <main id="quiz-screen">
+      <div class="progress-wrap">
+        <span id="question-count">問題 1 / 5</span>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p class="question-text" id="question-text"></p>
+        <div class="choices" id="choices"></div>
+        <div class="feedback hidden" id="feedback"></div>
+        <button class="btn-next hidden" id="btn-next">次の問題へ →</button>
+      </div>
+    </main>
+
+    <main id="result-screen" class="hidden">
+      <div class="card result-card">
+        <div class="result-icon" id="result-icon"></div>
+        <h2>クイズ終了！</h2>
+        <p class="score-text" id="score-text"></p>
+        <p class="score-message" id="score-message"></p>
+        <button class="btn-retry" id="btn-retry">もう一度挑戦する</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
